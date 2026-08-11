@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YOUR NAME | AI & Software Developer</title>
+
+  <meta
+    name="description"
+    content="AI and Software Developer building intelligent software, automation and cloud solutions."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-box">
+      <div class="loader-logo">AI<span>.</span></div>
+
+      <div class="loader-label">
+        INITIALIZING SYSTEM
+      </div>
+
+      <div class="loader-bar">
+        <div id="loaderProgress"></div>
+      </div>
+
+      <div class="loader-percent">
+        <span id="loaderPercent">0</span>%
+      </div>
+    </div>
+  </div>
+
+  <!-- BACKGROUND -->
+  <canvas id="networkCanvas"></canvas>
+  <div class="grid"></div>
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      <span class="logo-mark">◈</span>
+      <span>YOUR<span>NAME</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#stack">STACK</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a href="#contact" class="nav-contact magnetic">
+      LET'S TALK
+    </a>
+
+    <button class="menu-button" id="menuButton">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#stack">STACK</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <div class="available reveal">
+          <span></span>
+          AVAILABLE FOR AI & SOFTWARE PROJECTS
+        </div>
+
+        <h1 class="hero-title reveal">
+          I BUILD
+          <span class="outline">INTELLIGENT</span>
+          <span>SOFTWARE.</span>
+        </h1>
+
+        <div class="role reveal">
+          CURRENTLY BUILDING →
+          <strong id="typing"></strong>
+          <i>|</i>
+        </div>
+
+        <p class="hero-description reveal">
+          AI & Software Developer focused on building
+          intelligent products, automation systems,
+          modern web applications and scalable cloud
+          solutions.
+        </p>
+
+        <div class="hero-buttons reveal">
+
+          <a href="#projects" class="btn btn-primary magnetic">
+            VIEW MY WORK
+            <span>↗</span>
+          </a>
+
+          <a href="#contact" class="btn btn-secondary magnetic">
+            CONTACT ME
+          </a>
+
+        </div>
+
+        <div class="stats reveal">
+
+          <div>
+            <strong data-count="15">0</strong>
+            <span>PROJECTS</span>
+          </div>
+
+          <div>
+            <strong data-count="8">0</strong>
+            <span>AI TOOLS</span>
+          </div>
+
+          <div>
+            <strong data-count="100">0</strong>
+            <span>CURIOUS %</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- AI VISUAL -->
+      <div class="hero-visual reveal">
+
+        <div class="coordinate top">
+          X <span id="coordX">000</span>
+        </div>
+
+        <div class="coordinate bottom">
+          Y <span id="coordY">000</span>
+        </div>
+
+        <div class="ai-orb" id="aiOrb">
+
+          <div class="orb-ring ring-one"></div>
+          <div class="orb-ring ring-two"></div>
+          <div class="orb-ring ring-three"></div>
+
+          <div class="orb-core">
+            <div class="scan"></div>
+
+            <div class="core-text">
+              <small>AI CORE</small>
+              <strong>ONLINE</strong>
+            </div>
+          </div>
+
+          <div class="node node-one">AI</div>
+          <div class="node node-two">ML</div>
+          <div class="node node-three">API</div>
+          <div class="node node-four">CLOUD</div>
+
+        </div>
+
+        <div class="visual-code">
+          <span>&lt; developer /&gt;</span>
+          <span>AI × SOFTWARE × CLOUD</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+      <div class="section-heading reveal">
+        <span>01 / ABOUT</span>
+        <div></div>
+        <small>HUMAN × MACHINE</small>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="profile-wrapper reveal">
+
+          <div class="profile-frame">
+
+            <img
+              src="images/profile.jpg"
+              alt="YOUR NAME"
+            >
+
+            <div class="profile-scan"></div>
+
+            <div class="corner c1"></div>
+            <div class="corner c2"></div>
+            <div class="corner c3"></div>
+            <div class="corner c4"></div>
+
+            <div class="profile-label">
+              <span>PROFILE / 001</span>
+              <span>AI.DEV</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="about-text reveal">
+
+          <small class="number">01</small>
+
+          <h2>
+            I DON'T JUST
+            <span>WRITE CODE.</span>
+          </h2>
+
+          <p>
+            I build systems that think, automate,
+            communicate and solve real-world problems.
+          </p>
+
+          <p>
+            My work sits at the intersection of
+            Artificial Intelligence, Software Engineering,
+            Cloud Technology and modern digital experiences.
+          </p>
+
+          <div class="about-tags">
+            <span>AI</span>
+            <span>SOFTWARE</span>
+            <span>CLOUD</span>
+            <span>AUTOMATION</span>
+            <span>APIs</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- AI STACK -->
+    <section class="section stack-section" id="stack">
+
+      <div class="section-heading reveal">
+        <span>02 / AI ECOSYSTEM</span>
+        <div></div>
+        <small>MY DIGITAL TOOLBOX</small>
+      </div>
+
+      <div class="big-title reveal">
+        <small>AI × CLOUD × CODE</small>
+        <h2>MY <span>ARSENAL.</span></h2>
+      </div>
+
+      <div class="tools">
+
+        <article class="tool reveal">
+          <div class="tool-number">01</div>
+          <div class="status">ACTIVE</div>
+          <div class="tool-icon cyan">AI</div>
+          <h3>ChatGPT</h3>
+          <p>
+            LLM applications, AI assistants,
+            prompt engineering and automation.
+          </p>
+          <div class="tags">
+            <span>LLM</span>
+            <span>API</span>
+            <span>AI</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">02</div>
+          <div class="status orange">ACTIVE</div>
+          <div class="tool-icon orange-icon">C</div>
+          <h3>Claude</h3>
+          <p>
+            AI-assisted development, reasoning,
+            coding workflows and intelligent systems.
+          </p>
+          <div class="tags">
+            <span>LLM</span>
+            <span>CODE</span>
+            <span>AI</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">03</div>
+          <div class="status purple">ACTIVE</div>
+          <div class="tool-icon purple-icon">✦</div>
+          <h3>Gemini</h3>
+          <p>
+            Multimodal AI, intelligent applications
+            and modern AI workflows.
+          </p>
+          <div class="tags">
+            <span>AI</span>
+            <span>API</span>
+            <span>LLM</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">04</div>
+          <div class="status">CLOUD</div>
+          <div class="tool-icon aws">AWS</div>
+          <h3>AWS</h3>
+          <p>
+            Cloud infrastructure, deployment,
+            storage, APIs and scalable systems.
+          </p>
+          <div class="tags">
+            <span>EC2</span>
+            <span>S3</span>
+            <span>CLOUD</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">05</div>
+          <div class="status">CLOUD</div>
+          <div class="tool-icon gcp">G</div>
+          <h3>Google Cloud</h3>
+          <p>
+            Cloud services, AI infrastructure,
+            APIs and deployments.
+          </p>
+          <div class="tags">
+            <span>GCP</span>
+            <span>AI</span>
+            <span>CLOUD</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">06</div>
+          <div class="status green">CORE</div>
+          <div class="tool-icon python">PY</div>
+          <h3>Python</h3>
+          <p>
+            AI development, backend systems,
+            automation, data and machine learning.
+          </p>
+          <div class="tags">
+            <span>PYTHON</span>
+            <span>ML</span>
+            <span>AI</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">07</div>
+          <div class="status">DEV</div>
+          <div class="tool-icon github">GH</div>
+          <h3>GitHub</h3>
+          <p>
+            Version control, software engineering,
+            repositories and collaboration.
+          </p>
+          <div class="tags">
+            <span>GIT</span>
+            <span>DEV</span>
+            <span>CODE</span>
+          </div>
+        </article>
+
+        <article class="tool reveal">
+          <div class="tool-number">08</div>
+          <div class="status green">API</div>
+          <div class="tool-icon api">API</div>
+          <h3>AI APIs</h3>
+          <p>
+            Connecting intelligent models to
+            real-world software and automation.
+          </p>
+          <div class="tags">
+            <span>REST</span>
+            <span>API</span>
+            <span>LLM</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>CHATGPT</span><b>×</b>
+          <span>CLAUDE</span><b>×</b>
+          <span>GEMINI</span><b>×</b>
+          <span>AWS</span><b>×</b>
+          <span>GOOGLE CLOUD</span><b>×</b>
+          <span>PYTHON</span><b>×</b>
+          <span>GITHUB</span><b>×</b>
+          <span>AI APIs</span><b>×</b>
+
+          <span>CHATGPT</span><b>×</b>
+          <span>CLAUDE</span><b>×</b>
+          <span>GEMINI</span><b>×</b>
+          <span>AWS</span><b>×</b>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+
+      <div class="section-heading reveal">
+        <span>03 / SELECTED WORK</span>
+        <div></div>
+        <small>REAL WORLD SYSTEMS</small>
+      </div>
+
+      <div class="projects">
+
+        <article class="project reveal">
+
+          <div class="project-number">01</div>
+
+          <div>
+            <small>AI / AUTOMATION</small>
+
+            <h3>
+              Intelligent
+              Assistant
+            </h3>
+
+            <p>
+              AI-powered assistant designed to automate
+              repetitive workflows and interact with
+              users intelligently.
+            </p>
+          </div>
+
+          <div class="project-arrow">↗</div>
+
+        </article>
+
+        <article class="project reveal">
+
+          <div class="project-number">02</div>
+
+          <div>
+            <small>SOFTWARE / WEB</small>
+
+            <h3>
+              Modern
+              Web Platform
+            </h3>
+
+            <p>
+              High-performance web application combining
+              modern frontend architecture and backend APIs.
+            </p>
+          </div>
+
+          <div class="project-arrow">↗</div>
+
+        </article>
+
+        <article class="project reveal">
+
+          <div class="project-number">03</div>
+
+          <div>
+            <small>CLOUD / AI</small>
+
+            <h3>
+              Cloud AI
+              System
+            </h3>
+
+            <p>
+              Scalable cloud architecture connecting
+              APIs, AI services and software systems.
+            </p>
+          </div>
+
+          <div class="project-arrow">↗</div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAPABILITIES -->
+    <section class="section">
+
+      <div class="section-heading reveal">
+        <span>04 / CAPABILITIES</span>
+        <div></div>
+        <small>WHAT I BUILD</small>
+      </div>
+
+      <div class="capabilities">
+
+        <div class="capability reveal">
+          <small>01</small>
+          <h3>Artificial<br>Intelligence</h3>
+          <p>
+            LLM applications, AI agents,
+            automation and intelligent systems.
+          </p>
+        </div>
+
+        <div class="capability reveal">
+          <small>02</small>
+          <h3>Software<br>Development</h3>
+          <p>
+            Full-stack applications, APIs,
+            architecture and scalable software.
+          </p>
+        </div>
+
+        <div class="capability reveal">
+          <small>03</small>
+          <h3>Cloud<br>Engineering</h3>
+          <p>
+            Cloud deployments, infrastructure,
+            APIs and distributed systems.
+          </p>
+        </div>
+
+        <div class="capability reveal">
+          <small>04</small>
+          <h3>Automation</h3>
+          <p>
+            Turning repetitive processes into
+            intelligent automated workflows.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-content reveal">
+
+        <small>HAVE AN IDEA?</small>
+
+        <h2>
+          LET'S BUILD
+          <span>SOMETHING.</span>
+        </h2>
+
+        <p>
+          AI-powered. Human-focused.
+          Built for the future.
+        </p>
+
+        <a
+          href="mailto:your@email.com"
+          class="contact-button magnetic"
+        >
+          START A CONVERSATION
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© <b id="year"></b> YOUR NAME</span>
+    <span>AI × SOFTWARE × CLOUD</span>
+    <span>BUILT WITH CODE</span>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
